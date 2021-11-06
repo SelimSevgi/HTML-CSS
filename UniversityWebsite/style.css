@@ -3,6 +3,7 @@
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
+/* --------home---------- */ 
 .header {
   min-height: 100vh;
   width: 100%;
@@ -52,6 +53,7 @@ nav img {
   background: #f44336;
   display: block;
   margin: auto;
+  transition: 0.5s;
 }
 
 .nav-links ul li:hover::after {
@@ -127,5 +129,115 @@ nav .fa {
   }
   .nav-links ul {
     padding: 30px;
+  }
+
+}
+
+/* ----- couse ----*/
+
+.couse {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+h1 {
+  font-size: 36px; /* yazı boyutu */
+  font-weight: 600; /* yazı ağırlığı */
+}
+p {
+  color: #777; /*yazı rengi beyaz */
+  font-size: 14px; /* yazı tipi boyutu */
+  font-weight: 300; /* yazı tipi ağırlığı */
+  line-height: 22px; /* satır yüksekliği */
+  padding: 10px; /* dolgu 10px */
+}
+.row {
+  margin-top: 5%; /* üsten kenar boşluğu */
+  display: flex; /* esnek görüntüleme -satır içindeki tüm div sütunda olacak */
+  justify-content: space-between;
+}
+.course-col {
+  flex-basis: 31%; /* esnek tabanlar */
+  background: #fff3f3; /* arka plan*/
+  border-radius: 10px; /* kenarlık yarıcapı*/
+  margin-bottom: 5%; /* alttan kenar boşluğu */
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+h3 {
+  text-align: center; /* metin hizalama: merkez */
+  font-weight: 600;
+  margin: 10px 0;
+}
+.course-col:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* kutu gölgeleme */
+}
+@media (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* ----- campus ----*/
+.campus {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.campus-row {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.campus-row img {
+  object-fit: cover;
+  width: 100%;
+  height: 70vh;
+  display: block;
+}
+
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.layer:hover{
+  background: rgba(226, 0, 0, 0.7);;
+}
+
+.layer h3{
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.layer:hover h3{
+  bottom: 49%;
+  opacity: 1;
+}
+
+@media (max-width: 700px) {
+  .campus-row img {
+    height: 50vh;
+
   }
 }
