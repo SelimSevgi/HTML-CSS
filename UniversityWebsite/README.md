@@ -1,5 +1,5 @@
 # AÇIKLAMA
-> https://www.bootstrapcdn.com/fontawesome/ sitesi üzerindeki linki css kodunu kullanıyoruz. 
+>* https://www.bootstrapcdn.com/fontawesome/ sitesi üzerindeki linki css kodunu kullanıyoruz. 
 
 > https://fontawesome.com/v4.7/get-started/ sitesinden veya
 > https://fontawesome.com sitesi üzerinde iconlar için üyelik oluşturun.
